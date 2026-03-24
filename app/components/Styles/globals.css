@@ -1,0 +1,41 @@
+<!-- Add this to your Global CSS / Tailwind Config -->
+<style>
+:root {
+    --jengu-neon: #01d4ab;
+    --jengu-dark: #050a0f;
+    --jengu-surface: #0f172a;
+}
+
+body {
+    background-color: var(--jengu-dark);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Afro-Futuristic Pattern Overlay (Kuba/Toghu motifs) */
+.pattern-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30H15L30 0zM0 30l15 30H-15L0 30zm60 0l15 30H45L60 30zM30 60l15-30H15l15 30z' fill='%2301d4ab' fill-opacity='0.05'/%3E%3C/svg%3E");
+}
+
+.neon-border {
+    border: 1px solid var(--jengu-neon);
+    box-shadow: 0 0 10px rgba(1, 212, 171, 0.3);
+}
+
+.neon-text {
+    text-shadow: 0 0 8px rgba(1, 212, 171, 0.6);
+}
+
+.btn-jengu {
+    background: var(--jengu-neon);
+    color: var(--jengu-dark);
+    font-weight: 800;
+    transition: all 0.3s ease;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.btn-jengu:hover {
+    box-shadow: 0 0 20px var(--jengu-neon);
+    transform: scale(1.05);
+}
+</style>
