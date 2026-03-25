@@ -1,12 +1,4 @@
-# Ignore node_modules
-node_modules/
-
-# Ignore local environment files
+node_modules
 .env
-
-# Ignore Mac system files
+*.log
 .DS_Store
-
-# Ignore logs
-npm-debug.log
-yarn-error.log
